@@ -12,7 +12,7 @@ class SignUp extends React.Component {
         super();
 
         this.state = {
-            displayName: '';
+            displayName: '',
             email: '',
             password: '',
             confirmPassword: ''
@@ -33,7 +33,7 @@ class SignUp extends React.Component {
 
             await createUserProfileDocument(user, { displayName });
             this.setState({
-                displayName: '';
+                displayName: '',
                 email: '',
                 password: '',
                 confirmPassword: ''
